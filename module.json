@@ -1,7 +1,7 @@
 {
-  "name": "module",
-  "title": "New Module",
-  "description": "",
+  "name": "pack-mod",
+  "title": "모듈 이름",
+  "description": "모듈 설명",
   "version": "This is auto replaced",
   "library": "false",
   "manifestPlusVersion": "1.0.0",
@@ -9,40 +9,61 @@
   "compatibleCoreVersion": "9",
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "만든이 이름"
     }
   ],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-    
-  ],
-  "esmodules": [
-    "/scripts/module.js"
-  ],
-  "scripts": [
-    "/scripts/lib/lib.js"
-  ],
-  "styles": [
-    "/styles/module.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
+   "packs": [
+        {
+            "name": "module-creatures",
+            "label": "Module Creatures",
+            "path": "./packs/creatures.db",
+            "entity": "Actor",
+            "type": "Actor"
+        },
+        {
+            "name": "module-items",
+            "label": "Module Items",
+            "path": "./packs/items.db",
+            "entity": "Item",
+            "type": "Item"
+        },
+        {
+            "name": "module-scenes",
+            "label": "Module Scenes",
+            "path": "./packs/scenes.db",
+            "entity": "Scene",
+            "type": "Scene"
+        },
+        {
+            "name": "module-journal-entries",
+            "label": "Module Journal Entries",
+            "path": "./packs/journal-entries.db",
+            "entity": "JournalEntry",
+            "type": "JournalEntry"
+        },
+        {
+            "name": "module-macros",
+            "label": "Module Macros",
+            "path": "./packs/macros.db",
+            "entity": "Macro",
+            "type": "Macro"
+        },
+        {
+            "name": "module-roll-tables",
+            "label": "Module Roll Tables",
+            "path": "./packs/roll-tables.db",
+            "entity": "RollTable",
+            "type": "RollTable"
+        },
+        {
+            "name": "module-playlists",
+            "label": "Module Playlists",
+            "path": "./packs/playlists.db",
+            "entity": "Playlist",
+            "type": "Playlist"
+        }
+    ],
   "url": "This is auto replaced",
   "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "download": "This is auto replaced"
 }
